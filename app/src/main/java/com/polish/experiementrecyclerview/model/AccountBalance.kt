@@ -1,6 +1,7 @@
 package com.polish.experiementrecyclerview.model
 
-class AccountBalance (
+data class AccountBalance (
+    var id:Int,
     var accountNumber:String,
     var bankName:String,
     var timeCheck:String,

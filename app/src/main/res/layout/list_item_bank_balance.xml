@@ -65,6 +65,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/viga"
                             android:textAlignment="textEnd"
+                            android:text="@{AccountBalance.balanceAmountHeading}"
                             android:textSize="@dimen/balance_heading"
                             tools:text="@string/d_amount" />
 
@@ -111,6 +112,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/account_details_text_size"
+                                android:text="@{AccountBalance.accountNumber}"
                                 tools:text="@string/bank_number_ten" />
 
                             <TextView
@@ -118,6 +120,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 tools:text="@string/bank_name_now"
+                                android:text="@{AccountBalance.bankName}"
                                 android:textSize="@dimen/account_details_text_size" />
 
                             <TextView
@@ -125,6 +128,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/account_details_text_size"
+                                android:text="@{AccountBalance.timeCheck}"
                                 tools:text="@string/timing_now" />
 
 
@@ -151,8 +155,8 @@
                                 android:id="@+id/amountInAccountId"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/d_amount"
-
+                                android:text="@{AccountBalance.balanceAmount}"
+                                tools:text="@string/d_amount"
                                 />
 
 
