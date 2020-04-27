@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ExperiementRecyclerView</string>
+    <string name="balance_image">Bank Balance Image</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="d_amount">$500</string>
+    <string name="bank_logo">Bank Logo</string>
+    <string name="bank_number_ten">324XXXX123</string>
+    <string name="bank_name_now">GTBank</string>
+    <string name="timing_now">Checked 30 Mar 2020</string>
+    <string name="delete_image">Delete Image</string>
 </resources>
