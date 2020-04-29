@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         var adapter = AccountBalanceAdapter(accountList, AccountBalanceAdapter.OnClickListener{}, object :ItemDeleteListener{
-            override fun onItemDelete(accountBalance: AccountBalance) {
-                accountList.remove(accountBalance)
+            override fun onItemDelete(position:Int) {
+                accountList.removeAt(position)
             }
         })
         recyclerView.adapter = adapter
