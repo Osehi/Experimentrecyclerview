@@ -53,18 +53,28 @@ class AccountBalanceAdapter(val balance:ArrayList<AccountBalance>, val onClickLi
 //            onClickListener.onDelete(accountBalance)
 //        }
         holder.itemView.deleteCardInfoId.setOnClickListener {
-            onItemDeleteListener.onItemDelete(accountBalance)
+            onItemDeleteListener.onItemDelete(position)
+            notifyDataSetChanged()
         }
 
         holder.bind(accountBalance)
     }
 
+    // this was the original implementation for the general click on the card
     class OnClickListener(val clickListener:(accountBalance:AccountBalance) -> Unit){
 
         fun onClick(accountBalance:AccountBalance) = clickListener(accountBalance)
 
 
     }
+
+    // an abstract class was created for the onClickListener to make room for additional click-options
+    // courtesy: Idris
+
+//    abstract class OnClickListener {
+//        abstract fun onClick(accountBalance: AccountBalance)
+//        abstract fun onRemove(position: Int)
+//    }
 
 
 }

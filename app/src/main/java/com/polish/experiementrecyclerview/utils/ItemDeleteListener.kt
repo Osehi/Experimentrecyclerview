@@ -5,6 +5,6 @@ import com.polish.experiementrecyclerview.model.AccountBalance
 
 interface ItemDeleteListener {
 
-    fun onItemDelete(accountBalance: AccountBalance)
+    fun onItemDelete(position:Int)
 
 }
